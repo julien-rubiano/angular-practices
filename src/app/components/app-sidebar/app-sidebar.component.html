@@ -1,0 +1,28 @@
+<div class="sidebar">
+  <app-sidebar-header></app-sidebar-header>
+  <app-sidebar-form></app-sidebar-form>
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard </a>
+      </li>
+      <li class="divider"></li>
+      <li class="nav-title">
+        Practices
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+        <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-puzzle"></i> Reactive Form</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/reactive-form/simple-form']"><i class="icon-puzzle"></i> Simple form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/reactive-form/complex-form']"><i class="icon-puzzle"></i> Complex Form</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <app-sidebar-footer></app-sidebar-footer>
+  <app-sidebar-minimizer></app-sidebar-minimizer>
+</div>
